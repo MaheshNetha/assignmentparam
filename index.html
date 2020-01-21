@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Templates</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="
+    sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }        
+        h1,h2,h3,h4,h5,h6 {
+            font-family: 'Roboto', sans-serif;
+        }
+        .your-version a{
+            border-radius: 20px;
+        }
+        @media only screen and (min-width: 769px) {
+            .your-version{
+                width: 77%;
+            }
+            .error-msg p{
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="home-tagline py-5 text-center">
+        <div class="container">
+            <div class="brand mb-5">
+                <a href="#"><img src="param_logo_black_header.svg" width="200" alt="param" class="img-fluid"></a>
+            </div>  
+            <div class="page-alert mb-5">
+                <img src="warning.svg" width="100" alt="param" class="img-fluid">
+            </div>
+            <div class="error-msg">
+                <h4 class="font-weight-bold">Oops...your browser does not supported!</h4>
+                <p class="text-muted mx-auto">To use param we recommend you to use latest version of one of these browsers.</p>
+            </div>
+            <div class="d-md-flex align-items-center justify-content-center pt-4">
+                <div class="browser mr-3">
+                    <img src="chrome.svg" width="60" alt="param" class="img-fluid mb-3">
+                    <h6>Google Chrome</h6>
+                    <p class="small">Version 49+</p>
+                </div>
+                <div class="browser mr-3">
+                    <img src="safari.svg" width="60" alt="param" class="img-fluid mb-3">
+                    <h6>Apple Safari</h6>
+                    <p class="small">Version 10.1+</p>
+                </div>
+                <div class="browser mr-3">
+                    <img src="mozilla.svg" width="60" alt="param" class="img-fluid mb-3">
+                    <h6>Mozilla Firefox</h6>
+                    <p class="small">Version 47+</p>
+                </div>
+                <div class="browser mr-3">
+                    <img src="ie.svg" width="60" alt="param" class="img-fluid mb-3">
+                    <h6>Internet Explorer</h6>
+                    <p class="small">No longer supported</p>
+                </div>
+                <div class="browser">
+                    <img src="edge.svg" width="60" alt="param" class="img-fluid mb-3">
+                    <h6>Microsoft Edge</h6>
+                    <p class="small">Version 15+</p>
+                </div>
+            </div>
+            <div class="your-version text-right">
+                <a href="#" class="your-version alert alert-danger small px-2 py-1 text-decoration-none"><img src="warning.svg" width="15" alt="version" class="img-fluid mr-1 mb-1">Your version: 8.3</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
